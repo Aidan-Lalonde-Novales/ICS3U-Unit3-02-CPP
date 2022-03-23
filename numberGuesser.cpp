@@ -11,16 +11,16 @@
 int main() {
     // This function gets a guess from a user and tells them
     // if they got the number between 0-9 correct
-    const float RANDOM_NUMBER = 1;
+    const float RANDOM = 1;
 
-    float guessed_number;
+    float guessedNumber;
 
     // Input
     std::cout << "Enter a number between 0 and 9: ";
-    std::cin >> guessed_number;
+    std::cin >> guessedNumber;
 
     // Process & Output
-    if (guessed_number == RANDOM_NUMBER) {
+    if (guessedNumber == RANDOM) {
         std::cout << "You Guessed Correctly!" << std::endl;
         std::cout << std::endl;
         std::cout << "Done." << std::endl;
