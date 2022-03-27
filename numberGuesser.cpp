@@ -22,11 +22,12 @@ int main() {
     // Process & Output
     if (guessedNumber == RANDOM) {
         std::cout << "You Guessed Correctly!" << std::endl;
-        std::cout << std::endl;
-        std::cout << "Done." << std::endl;
-    } else {
-        std::cout << "You Guessed Incorrectly." << std::endl;
-        std::cout << std::endl;
-        std::cout << "Done." << std::endl;
     }
+
+    if (guessedNumber != RANDOM) {
+        std::cout << "You Guessed Incorrectly." << std::endl;
+    }
+
+    std::cout << std::endl;
+    std::cout << "Done." << std::endl;
 }
